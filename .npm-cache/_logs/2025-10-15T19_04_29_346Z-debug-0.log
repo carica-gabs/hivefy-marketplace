@@ -1,0 +1,18 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\gabri\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.2
+2 info using node@v22.20.0
+3 silly config load:file:C:\Users\gabri\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:C:\hivefy\hivefy-marketplace\.npmrc
+5 silly config load:file:C:\Users\gabri\.npmrc
+6 silly config load:file:C:\Users\gabri\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm exec vercel
+8 verbose argv "exec" "--" "vercel"
+9 verbose logfile logs-max:10 dir:C:\hivefy\hivefy-marketplace\.npm-cache\_logs\2025-10-15T19_04_29_346Z-
+10 verbose logfile C:\hivefy\hivefy-marketplace\.npm-cache\_logs\2025-10-15T19_04_29_346Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd C:\hivefy\hivefy-marketplace
+13 verbose os Windows_NT 10.0.26100
+14 verbose node v22.20.0
+15 verbose npm  v11.6.2
+16 verbose exit 1
+17 verbose code 1

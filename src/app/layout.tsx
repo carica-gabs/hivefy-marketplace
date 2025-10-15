@@ -1,9 +1,20 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Roboto_Mono } from 'next/font/google';
 import { Navigation } from '@/components/Navigation';
+import { ThemeProvider } from '@/components/providers/theme-provider';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const robotoMono = Roboto_Mono({
+  subsets: ['latin'],
+  variable: '--font-roboto-mono',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'hivefy marketplace — modelo steam',
@@ -34,9 +45,16 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
-        <Navigation />
-        {children}
+      <body className={`${inter.variable} ${robotoMono.variable} font-body antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navigation />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
