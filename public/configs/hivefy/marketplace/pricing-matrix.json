@@ -1,0 +1,86 @@
+{
+  "tiers": {
+    "starter": {
+      "name": "starter",
+      "mrr": 6000,
+      "products": ["sofia_ia_sdr"],
+      "limits": {
+        "integrations": 1,
+        "workflows": 1,
+        "dashboards": 1
+      }
+    },
+    "growth": {
+      "name": "growth",
+      "mrr": 15000,
+      "products": ["sofia_ia_sdr", "clara_ia_analyst", "centro_comando_clareza"],
+      "limits": {
+        "integrations": 3,
+        "workflows": 3,
+        "dashboards": 3
+      }
+    },
+    "dominio": {
+      "name": "domínio",
+      "mrr": 30000,
+      "products": ["sofia_ia_sdr", "clara_ia_analyst", "otto_ia_ops", "centro_comando_sabedoria", "integracoes_premium"],
+      "limits": {
+        "integrations": 8,
+        "workflows": 8,
+        "dashboards": 8
+      }
+    },
+    "serenidade": {
+      "name": "serenidade",
+      "mrr": 50000,
+      "products": ["sofia_ia_sdr", "clara_ia_analyst", "otto_ia_ops", "mia_ia_marketing", "luna_ia_cs", "theo_ia_finance", "centro_comando_serenidade", "integracoes_premium", "automacoes_premium"],
+      "limits": {
+        "integrations": 25,
+        "workflows": 25,
+        "dashboards": 25
+      }
+    }
+  },
+  "addOns": {
+    "extra_integration": {
+      "mrr": 500,
+      "description": "integração adicional"
+    },
+    "extra_workflow": {
+      "mrr": 300,
+      "description": "workflow adicional"
+    },
+    "extra_dashboard": {
+      "mrr": 200,
+      "description": "dashboard adicional"
+    }
+  },
+  "discounts": {
+    "annual": 0.15,
+    "volume_10k": 0.05,
+    "volume_50k": 0.10,
+    "volume_100k": 0.15
+  },
+  "slas": {
+    "starter": {
+      "uptime": 0.99,
+      "response_time": 24,
+      "support": "email"
+    },
+    "growth": {
+      "uptime": 0.995,
+      "response_time": 12,
+      "support": "email + chat"
+    },
+    "dominio": {
+      "uptime": 0.999,
+      "response_time": 4,
+      "support": "email + chat + phone"
+    },
+    "serenidade": {
+      "uptime": 0.9999,
+      "response_time": 1,
+      "support": "email + chat + phone + dedicated"
+    }
+  }
+}

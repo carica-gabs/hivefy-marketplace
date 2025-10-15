@@ -1,0 +1,257 @@
+{
+  "products": [
+    {
+      "id": "recorrente.sofia_ia_sdr",
+      "nome": "sofia ia sdr",
+      "categoria": "recorrente",
+      "motor": "aquisicao",
+      "peca": "agentes_ia",
+      "preco": { "mrr": 6000, "setup": 0 },
+      "duracao": "onboarding 1 semana",
+      "ctas": ["trial_7d", "demo", "contato"],
+      "trackingEvents": ["trial_started", "seq_sent", "meeting_booked", "activation_7d", "upsell"]
+    },
+    {
+      "id": "recorrente.clara_ia_analyst",
+      "nome": "clara ia analyst",
+      "categoria": "recorrente",
+      "motor": "receita",
+      "peca": "agentes_ia",
+      "preco": { "mrr": 8000, "setup": 0 },
+      "duracao": "onboarding 1 semana",
+      "ctas": ["trial_7d", "demo", "contato"],
+      "trackingEvents": ["activation", "insight_shared", "roi_proven"]
+    },
+    {
+      "id": "recorrente.otto_ia_ops",
+      "nome": "otto ia ops",
+      "categoria": "recorrente",
+      "motor": "operacao",
+      "peca": "agentes_ia",
+      "preco": { "mrr": 10000, "setup": 0 },
+      "duracao": "onboarding 2 semanas",
+      "ctas": ["trial_7d", "demo", "contato"],
+      "trackingEvents": ["workflow_run", "time_saved", "milestone_achieved"]
+    },
+    {
+      "id": "recorrente.mia_ia_marketing",
+      "nome": "mia ia marketing",
+      "categoria": "recorrente",
+      "motor": "aquisicao",
+      "peca": "agentes_ia",
+      "preco": { "mrr": 12000, "setup": 0 },
+      "duracao": "onboarding 2 semanas",
+      "ctas": ["trial_7d", "demo", "contato"],
+      "trackingEvents": ["campaign_launched", "lift_proven"]
+    },
+    {
+      "id": "recorrente.luna_ia_cs",
+      "nome": "luna ia cs",
+      "categoria": "recorrente",
+      "motor": "retencao",
+      "peca": "agentes_ia",
+      "preco": { "mrr": 8000, "setup": 0 },
+      "duracao": "onboarding 1 semana",
+      "ctas": ["trial_7d", "demo", "contato"],
+      "trackingEvents": ["risk_detected", "save_playbook"]
+    },
+    {
+      "id": "recorrente.theo_ia_finance",
+      "nome": "theo ia finance",
+      "categoria": "recorrente",
+      "motor": "operacao",
+      "peca": "agentes_ia",
+      "preco": { "mrr": 6000, "setup": 0 },
+      "duracao": "onboarding 1 semana",
+      "ctas": ["trial_7d", "demo", "contato"],
+      "trackingEvents": ["alert_generated", "recovery_action"]
+    },
+    {
+      "id": "recorrente.centro_comando_clareza",
+      "nome": "centro comando clareza",
+      "categoria": "recorrente",
+      "motor": "orquestracao",
+      "peca": "centro_comando",
+      "preco": { "mrr": 7000, "setup": 10000 },
+      "duracao": "setup 2 semanas",
+      "ctas": ["demo", "contato"],
+      "trackingEvents": ["dashboard_created", "integration_active", "adoption_7d"]
+    },
+    {
+      "id": "recorrente.centro_comando_sabedoria",
+      "nome": "centro comando sabedoria",
+      "categoria": "recorrente",
+      "motor": "orquestracao",
+      "peca": "centro_comando",
+      "preco": { "mrr": 15000, "setup": 20000 },
+      "duracao": "setup 3 semanas",
+      "ctas": ["demo", "contato"],
+      "trackingEvents": ["funnel_active", "sla_met", "adoption_7d"]
+    },
+    {
+      "id": "recorrente.centro_comando_dominio",
+      "nome": "centro comando domínio",
+      "categoria": "recorrente",
+      "motor": "orquestracao",
+      "peca": "centro_comando",
+      "preco": { "mrr": 22000, "setup": 35000 },
+      "duracao": "setup 4 semanas",
+      "ctas": ["demo", "contato"],
+      "trackingEvents": ["integration_active", "orchestration_active", "adoption_7d"]
+    },
+    {
+      "id": "recorrente.centro_comando_serenidade",
+      "nome": "centro comando serenidade",
+      "categoria": "recorrente",
+      "motor": "orquestracao",
+      "peca": "centro_comando",
+      "preco": { "mrr": 30000, "setup": 50000 },
+      "duracao": "setup 6 semanas",
+      "ctas": ["demo", "contato"],
+      "trackingEvents": ["slo_met", "friction_eliminated", "adoption_7d"]
+    },
+    {
+      "id": "recorrente.integracoes_premium",
+      "nome": "integrações premium",
+      "categoria": "recorrente",
+      "motor": "operacao",
+      "peca": "integracoes",
+      "preco": { "mrr": 1500, "setup": 15000 },
+      "duracao": "setup 2 semanas",
+      "ctas": ["demo", "contato"],
+      "trackingEvents": ["integration_active", "events_processed", "dedupe_active"]
+    },
+    {
+      "id": "recorrente.automacoes_premium",
+      "nome": "automações premium",
+      "categoria": "recorrente",
+      "motor": "operacao",
+      "peca": "automacoes",
+      "preco": { "mrr": 3000, "setup": 8000 },
+      "duracao": "setup 1 semana",
+      "ctas": ["demo", "contato"],
+      "trackingEvents": ["workflow_active", "time_saved", "milestone_achieved"]
+    },
+    {
+      "id": "projeto.consultoria_otimizacao",
+      "nome": "consultoria otimização",
+      "categoria": "projeto",
+      "motor": "orquestracao",
+      "peca": "consultoria",
+      "preco": { "mrr": 0, "setup": 50000 },
+      "duracao": "6-8 semanas",
+      "ctas": ["proposta", "contato"],
+      "trackingEvents": ["project_start", "milestone_achieved", "cross_sell"]
+    },
+    {
+      "id": "projeto.consultoria_transformacao",
+      "nome": "consultoria transformação",
+      "categoria": "projeto",
+      "motor": "orquestracao",
+      "peca": "consultoria",
+      "preco": { "mrr": 0, "setup": 200000 },
+      "duracao": "16-24 semanas",
+      "ctas": ["proposta", "contato"],
+      "trackingEvents": ["project_start", "milestone_achieved", "cross_sell"]
+    },
+    {
+      "id": "projeto.implementacao_completa",
+      "nome": "implementação completa",
+      "categoria": "projeto",
+      "motor": "operacao",
+      "peca": "implementacao",
+      "preco": { "mrr": 0, "setup": 100000 },
+      "duracao": "12-16 semanas",
+      "ctas": ["proposta", "contato"],
+      "trackingEvents": ["project_start", "milestone_achieved", "cross_sell"]
+    },
+    {
+      "id": "projeto.implementacao_modulo",
+      "nome": "implementação módulo",
+      "categoria": "projeto",
+      "motor": "operacao",
+      "peca": "implementacao",
+      "preco": { "mrr": 0, "setup": 30000 },
+      "duracao": "4-6 semanas",
+      "ctas": ["proposta", "contato"],
+      "trackingEvents": ["project_start", "milestone_achieved", "cross_sell"]
+    },
+    {
+      "id": "projeto.advisory_board",
+      "nome": "advisory board",
+      "categoria": "projeto",
+      "motor": "orquestracao",
+      "peca": "advisory",
+      "preco": { "mrr": 50000, "setup": 0 },
+      "duracao": "contínuo",
+      "ctas": ["proposta", "contato"],
+      "trackingEvents": ["retainer_start", "meeting_held", "decision_made"]
+    },
+    {
+      "id": "projeto.fractional_coo",
+      "nome": "fractional coo",
+      "categoria": "projeto",
+      "motor": "operacao",
+      "peca": "advisory",
+      "preco": { "mrr": 80000, "setup": 0 },
+      "duracao": "contínuo",
+      "ctas": ["proposta", "contato"],
+      "trackingEvents": ["retainer_start", "process_optimized", "kpi_improved"]
+    },
+    {
+      "id": "academy.certificacao",
+      "nome": "certificação hivefy",
+      "categoria": "academy",
+      "motor": "orquestracao",
+      "peca": "academy",
+      "preco": { "mrr": 0, "setup": 5000 },
+      "duracao": "8-10 semanas",
+      "ctas": ["inscricao", "contato"],
+      "trackingEvents": ["course_enrolled", "course_completed", "cross_sell"]
+    },
+    {
+      "id": "academy.mba",
+      "nome": "mba tracking & operações",
+      "categoria": "academy",
+      "motor": "orquestracao",
+      "peca": "academy",
+      "preco": { "mrr": 0, "setup": 50000 },
+      "duracao": "12 meses",
+      "ctas": ["inscricao", "contato"],
+      "trackingEvents": ["course_enrolled", "course_completed", "cross_sell"]
+    },
+    {
+      "id": "academy.bootcamp",
+      "nome": "bootcamp intensivo",
+      "categoria": "academy",
+      "motor": "orquestracao",
+      "peca": "academy",
+      "preco": { "mrr": 0, "setup": 15000 },
+      "duracao": "6 semanas",
+      "ctas": ["inscricao", "contato"],
+      "trackingEvents": ["course_enrolled", "course_completed", "cross_sell"]
+    },
+    {
+      "id": "academy.summit",
+      "nome": "hivefy summit",
+      "categoria": "academy",
+      "motor": "orquestracao",
+      "peca": "academy",
+      "preco": { "mrr": 0, "setup": 2000 },
+      "duracao": "2 dias",
+      "ctas": ["inscricao", "contato"],
+      "trackingEvents": ["event_enrolled", "event_attended", "cross_sell"]
+    },
+    {
+      "id": "academy.spaces",
+      "nome": "hivefy spaces",
+      "categoria": "academy",
+      "motor": "orquestracao",
+      "peca": "academy",
+      "preco": { "mrr": 3000, "setup": 0 },
+      "duracao": "contínuo",
+      "ctas": ["inscricao", "contato"],
+      "trackingEvents": ["membership_start", "mentorship_held", "cross_sell"]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "rules": [
+    {
+      "id": "usage_80_percent",
+      "name": "uso > 80%",
+      "trigger": {
+        "metric": "usage_percentage",
+        "threshold": 0.80,
+        "duration": "7d"
+      },
+      "action": {
+        "type": "upsell",
+        "target": "next_tier",
+        "message": "você está usando 80%+ da capacidade. considere upgrade para mais recursos."
+      }
+    },
+    {
+      "id": "roi_proven",
+      "name": "roi comprovado",
+      "trigger": {
+        "metric": "roi_multiple",
+        "threshold": 3.0,
+        "duration": "30d"
+      },
+      "action": {
+        "type": "cross_sell",
+        "target": "complementary_product",
+        "message": "roi de 3x+ comprovado! que tal adicionar [produto complementar]?"
+      }
+    },
+    {
+      "id": "milestone_achieved",
+      "name": "milestone atingido",
+      "trigger": {
+        "metric": "milestone",
+        "threshold": "first_success",
+        "duration": "7d"
+      },
+      "action": {
+        "type": "upsell",
+        "target": "next_tier",
+        "message": "parabéns! primeiro sucesso alcançado. próximo passo: [próximo tier]."
+      }
+    },
+    {
+      "id": "health_score_low",
+      "name": "health score baixo",
+      "trigger": {
+        "metric": "health_score",
+        "threshold": 0.60,
+        "duration": "14d"
+      },
+      "action": {
+        "type": "cross_sell",
+        "target": "retention_product",
+        "message": "health score baixo detectado. considere [produto retenção] para melhorar."
+      }
+    },
+    {
+      "id": "bundle_migration",
+      "name": "migração para bundle",
+      "trigger": {
+        "metric": "multiple_products",
+        "threshold": 3,
+        "duration": "30d"
+      },
+      "action": {
+        "type": "bundle_migration",
+        "target": "appropriate_bundle",
+        "message": "você tem 3+ produtos. migre para bundle e economize 20%!"
+      }
+    }
+  ],
+  "telegramAlerts": {
+    "enabled": true,
+    "events": ["upsell", "cross_sell", "bundle_migration"],
+    "template": "🚨 **upsell detectado:** {action_type} para {target} - cliente {customer_id}"
+  }
+}

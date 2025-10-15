@@ -1,0 +1,54 @@
+{
+  "bundles": [
+    {
+      "id": "bundle.starter",
+      "name": "starter",
+      "description": "começar com sofia ia sdr",
+      "mrr": 6000,
+      "setup": 0,
+      "products": ["recorrente.sofia_ia_sdr"],
+      "savings": 0,
+      "upgradePath": "bundle.growth"
+    },
+    {
+      "id": "bundle.growth",
+      "name": "growth",
+      "description": "sofia + clara + centro comando clareza",
+      "mrr": 15000,
+      "setup": 10000,
+      "products": ["recorrente.sofia_ia_sdr", "recorrente.clara_ia_analyst", "recorrente.centro_comando_clareza"],
+      "savings": 6000,
+      "upgradePath": "bundle.dominio"
+    },
+    {
+      "id": "bundle.dominio",
+      "name": "domínio",
+      "description": "agentes ia + centro comando sabedoria + integrações",
+      "mrr": 30000,
+      "setup": 35000,
+      "products": ["recorrente.sofia_ia_sdr", "recorrente.clara_ia_analyst", "recorrente.otto_ia_ops", "recorrente.centro_comando_sabedoria", "recorrente.integracoes_premium"],
+      "savings": 15000,
+      "upgradePath": "bundle.serenidade"
+    },
+    {
+      "id": "bundle.serenidade",
+      "name": "serenidade",
+      "description": "todos os agentes ia + centro comando serenidade + integrações + automações",
+      "mrr": 50000,
+      "setup": 50000,
+      "products": ["recorrente.sofia_ia_sdr", "recorrente.clara_ia_analyst", "recorrente.otto_ia_ops", "recorrente.mia_ia_marketing", "recorrente.luna_ia_cs", "recorrente.theo_ia_finance", "recorrente.centro_comando_serenidade", "recorrente.integracoes_premium", "recorrente.automacoes_premium"],
+      "savings": 25000,
+      "upgradePath": null
+    }
+  ],
+  "migrationRules": {
+    "a_la_carte_to_bundle": {
+      "trigger": "roi_proven",
+      "discount": 0.20
+    },
+    "bundle_upgrade": {
+      "trigger": "usage_80_percent",
+      "discount": 0.10
+    }
+  }
+}
